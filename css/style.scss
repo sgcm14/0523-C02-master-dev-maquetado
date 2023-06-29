@@ -1,3 +1,31 @@
-h1 {
-  background-color: yellow;
+@import './sass/mixins.scss';
+@import './sass/reset.scss';
+@import './sass/font.scss';
+@import './sass/colors.scss';
+
+header nav {
+  display: flex;
+  justify-content: space-between
+}
+
+header ul {
+  gap: 20px;
+}
+
+footer img {
+  width: 20px;
+}
+
+footer{
+  display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+  justify-content: flex-end;
+    gap: 20px;
+}
+
+footer a {
+  justify-content: flex-end;
 }
