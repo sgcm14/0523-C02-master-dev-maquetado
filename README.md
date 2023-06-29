@@ -17,7 +17,7 @@ También podremos modularizar nuestro código para facilitar tareas de mantenimi
 
  Tomando como guía el trabajo la siguiente **screencapture**, crearemos los estilos utilizando el preprocesador SASS.
 
-  ![](https://raw.githubusercontent.com/sgcm14/0523-C02-game-shop-maquetado/main/dise%C3%B1o/Desktop.png)
+  ![](https://raw.githubusercontent.com/sgcm14/0523-C02-master-dev-maquetado/main/screencapture-terminado.png)
 > Pantalla de **Plantilla**
 
 Para facilitarte la tarea compartimos:
@@ -28,7 +28,7 @@ Una guía con los estilos más importantes:
     - **color-primary:** #8b8b8b;
     - **shadow:** #92f7f2;
 - Body:
-     - **Familia:** Arial, Helvetica, sans-serif;
+    - **Familia:** Arial, Helvetica, sans-serif;
 - H2:
     - **Familia:** Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     - **Tamaño:** 55px;
