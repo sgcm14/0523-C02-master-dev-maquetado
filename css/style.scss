@@ -3,29 +3,108 @@
 @import './sass/font.scss';
 @import './sass/colors.scss';
 
-header nav {
-  display: flex;
-  justify-content: space-between
-}
+header {
+  @include space;
+  font-family: $font-primary;
 
-header ul {
-  gap: 20px;
-}
-
-footer img {
-  width: 20px;
-}
-
-footer{
-  display: flex;
+  nav {
+    display: flex;
     justify-content: space-between;
+
+    span {
+      font-weight: bolder;
+      font-size: 18px;
+    }
+
+    ul {
+      gap: 20px;
+    }
+
+    a {
+      color: $color-black;
+      font-size: 14px;
+    }
+  }
 }
 
-footer ul {
-  justify-content: flex-end;
+main {
+  @include space;
+
+  .principal {
+    display: flex;
+
+    h1 {
+      font-family: $font-secondary;
+      font-size: 55px;
+      letter-spacing: 10px;
+      width: 400px;
+    }
+
+    h1::before {
+      @include shadowText (210px, 40px);
+    }
+
+    p {
+      color: $color-primary;
+      font-family: $font-primary;
+    }
+
+    img {
+      width: 40%
+    }
+
+    button {
+      @include buttonColor;
+      margin: 10px 10px 0 0;
+    }
+  }
+
+  .secondary {
+    font-family: $font-primary;
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+
+    article {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 5px;
+
+      span {
+        @include circle ($bg-secondary, $color-black);
+      }
+
+      h2::before {
+        @include shadowText (20px, 15px);
+      }
+    }
+
+  }
+}
+
+footer {
+  @include space;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    justify-content: flex-end;
     gap: 20px;
-}
 
-footer a {
-  justify-content: flex-end;
+    li {
+      @include circle ($color-white, $color-white);
+
+      a {
+        justify-content: flex-end;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+
+
+
 }
