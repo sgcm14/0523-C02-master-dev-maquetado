@@ -1,13 +1,37 @@
-// @import "font";
+@mixin space {
+  padding: 20px 80px;
+}
 
-// @mixin posicinarElement {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
+@mixin shadowText ($valW, $valH ) {
+  background-color: $bg-primary;
+  content: "";
+  width: $valW;
+  position: absolute;
+  opacity: 0.7;
+  height: $valH;
+}
 
-// @mixin awesome($color, $size) {
-//   font-family: $font-awesome;
-//   font-weight: $size;
-//   color: $color;
-// }
+@mixin buttonColor {
+  width: 100px;
+  height: 50px;
+  background-color: $bg-primary;
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+@mixin circle ($color-shadow, $color-circle) {
+  max-height: 44px;
+  max-width: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 16px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: $color-shadow;
+  border: $color-circle 1px solid;
+  color: $color-black;
+  box-shadow: -8px 0px 1px $bg-primary;
+}

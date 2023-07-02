@@ -15,29 +15,124 @@ ul {
   display: flex;
 }
 
+header {
+  padding: 20px 80px;
+  font-family: "Arial", "Helvetica", "sans-serif";
+}
 header nav {
   display: flex;
   justify-content: space-between;
 }
-
-header ul {
+header nav span {
+  font-weight: bolder;
+  font-size: 18px;
+}
+header nav ul {
   gap: 20px;
 }
+header nav a {
+  color: black;
+  font-size: 14px;
+}
 
-footer img {
+main {
+  padding: 20px 80px;
+}
+main .principal {
+  display: flex;
+}
+main .principal h1 {
+  font-family: "Impact", "Haettenschweiler", "Arial Narrow Bold", "sans-serif";
+  font-size: 55px;
+  letter-spacing: 10px;
+  width: 400px;
+}
+main .principal h1::before {
+  background-color: #03faee;
+  content: "";
+  width: 210px;
+  position: absolute;
+  opacity: 0.7;
+  height: 40px;
+}
+main .principal p {
+  color: #8b8b8b;
+  font-family: "Arial", "Helvetica", "sans-serif";
+}
+main .principal img {
+  width: 40%;
+}
+main .principal button {
+  width: 100px;
+  height: 50px;
+  background-color: #03faee;
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 10px 10px 0 0;
+}
+main .secondary {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+main .secondary article {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+}
+main .secondary article span {
+  max-height: 44px;
+  max-width: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 16px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  border: black 1px solid;
+  color: black;
+  box-shadow: -8px 0px 1px #03faee;
+}
+main .secondary article h2::before {
+  background-color: #03faee;
+  content: "";
   width: 20px;
+  position: absolute;
+  opacity: 0.7;
+  height: 15px;
 }
 
 footer {
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
 }
-
 footer ul {
   justify-content: flex-end;
   gap: 20px;
 }
-
-footer a {
+footer ul li {
+  max-height: 44px;
+  max-width: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 16px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: white 1px solid;
+  color: black;
+  box-shadow: -8px 0px 1px #03faee;
+}
+footer ul li a {
   justify-content: flex-end;
+}
+footer ul li a img {
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */
